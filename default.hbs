@@ -9,6 +9,7 @@
 
     <!-- <link rel="shortcut icon" href="{{asset "favicon.ico"}}"> -->
 
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700|Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -31,12 +32,14 @@
     {{ghost_foot}}
 
     <script type="text/javascript" src="{{asset "js/fluidvids.js"}}"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
     <script type="text/javascript" src="{{asset "js/site.js"}}"></script>
     <script>
         fluidvids.init({
             selector: ['iframe', 'object'], // runs querySelectorAll()
             players: ['www.youtube.com', 'player.vimeo.com'] // players to support
         });
+        hljs.initHighlightingOnLoad();
     </script>
 
 </body>
